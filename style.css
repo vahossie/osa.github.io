@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Laila', sans-serif ;
+}
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+header .logo {
+	position: relative;
+	max-width: 80px; 
+}
+header ul {
+	position: relative;
+	display: flex; 
+}
+header ul li { list-style: none;}
+header ul li a {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	margin-left: 12px;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 6px 15px;
+}
+header ul li a:hover,
+header ul li a.active {
+	background: #CE751D;
+	color: white;
+	transition: all 0.5s ease;
+}
+header ul li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+header ul li .dropdown {
+	display: inline-block;
+}
+.dropschool {
+	display: none;
+    position: absolute;
+    background-color: #;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropschool a {
+	color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropschool a:hover {
+	background-color:;
+}
+
+.dropdown:hover .dropschool {
+	display: block;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content .textbox {
+	position: relative;
+	max-width: 600px;
+}
+.content .textbox h2 {
+	color: #946B2D;
+	font-size: 3em;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+.content .textbox h2 span {
+	color: #CE751D;
+	font-size: 1.2em;
+	font-weight: 900;
+	line-height: 1.4em;
+}
+.content .textbox h2 p { color: #EEE; }
+.content .textbox a {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 8px 20px;
+	background: #CE751D;
+	color: white;
+	border-radius: 40px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+.content .imgbox {
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: 50px;
+	position: right;
+}
+.content .imgbox img {
+	max-width: 340px;
+}
+.thumb {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.thumb li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+	transition: 3%;
+}
+.thumb li:hover { transform: translateY(-15px); }
+.thumb li img {
+	max-width: 50px;
+}
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #740001;
+	clip-path: circle(70% at right -20%);
+} 
+
+form {
+	background: #740001;
+	width: 640px;
+	margin: 50pc auto;
+	max-width: 97%;
+	border-radius: 4px;
+	padding: 55px 30px;
+}
+form .title h2 {
+	letter-spacing: 6px;
+	border-bottom: 1px solid #946B2D;
+	display: inline-block;
+	padding-bottom: 8px;
+	margin-bottom: 32px;
+	color: white;
+}
+form .half {
+	display: flex;
+	justify-content: space-between;
+}
+form .half .item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+	width: 48%;
+}
+form label {
+	display: white;
+	font-size: 15px;
+	letter-spacing: 3.5px;
+	margin-bottom: 16px;
+	color: white;
+}
+form .half .item input {
+	border-radius: 4px;
+	border: 1px solid white;
+	outline: 0;
+	padding: 16px;
+	width: 100%;
+	height: 44px;
+	background: transparent;
+	font-size: 17px;
+}
+form .full {
+	margin-bottom: 24px;
+}
+form .full textarea {
+	background: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	outline: 0;
+	padding: 12px 16px;
+	width: 100%;
+	height: 200px;
+	font-size: 17px;
+}
+form .action {
+	margin-bottom: 37px;
+}
+form .action input {
+	background: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+	height: 44px;
+	letter-spacing: 3px;
+	outline: 0;
+	padding: 0 20px 0 22px;
+	margin-right: 10px;
+}
+form .action input[type="submit"], form .action input[type="reset"]{
+	background: white;
+	color: #946B2D;
+}
+form .icons a {
+	border: 1px solid white;
+	border-radius: 50px;
+	line-height: 36px;
+	text-align: center;
+	font-weight: 600;
+	width: 38px;
+	margin-right: 10px;
+}
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a: hover{
+	background: rgba(225, 225, 225, 0.075);
+}
+@media (max-width: 480px){
+	form .half {
+		flex-direction: column;
+	}
+	form .half .item {
+		width: 100px;
+	}
+	form .action {
+		display: flex;
+		flex-direction: column;
+	}
+	form .action input {
+		,margin-bottom: 10px;
+	}
+}*/

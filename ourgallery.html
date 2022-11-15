@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Gallery</title>
+	<link rel="icon" href="logo.png">
+</head>
+<body>
+<input type="radio" name="photos" id="check1" checked>
+<input type="radio" name="photos" id="check2">
+<input type="radio" name="photos" id="check3">
+</div>
+<div class="container">
+	<h1><b>OUR PHOTO GALLERY</b></h1>
+	<div class="line"></div><br><br><br>
+	<div class="top-content">
+		<h3>Photo Gallery</h3>
+		<label for="check1">All Photos</label>
+		<label for="check2">Hogwarts</label>
+		<label for="check3">Activities</label>
+	</div>
+	
+	<div class="photo-gallery">
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/1.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/2.jpeg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/3.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/4.jpg">
+		</div>
+		<div class="pic activities">
+			<img src="/hogwarts/gallery/5.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/6.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/7.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/8.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/9.png">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/10.png">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/11.png">
+		</div>
+		<div class="pic activities">
+			<img src="/hogwarts/gallery/12.png">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/13.png">
+		</div>
+		<div class="pic activities">
+			<img src="/hogwarts/gallery/14.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/15.jpg">
+		</div>
+		<div class="pic hogwarts">
+			<img src="/hogwarts/gallery/16.jpg">
+		</div>
+		<div class="pic activities">
+			<img src="/hogwarts/gallery/17.jpg">
+		</div>
+		<div class="pic activities">
+			<img src="/hogwarts/gallery/18.jpg">
+		</div>
+		<div class="pic activities">
+			<img src="/hogwarts/gallery/19.jpg">
+		</div>
+	</div>
+</div>
+<center><p><a href="home.html">Back to Home</a></p></center>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+	* {
+		padding: 0;
+		box-sizing: border-box;
+		font-family:'Laila', sans-serif ;
+	}
+
+	input {
+	display: none;
+	}
+
+	.container {
+	width: 100%;
+	text-align: center;
+	}
+
+	.line {
+	width: 10em;
+	height: 4px;
+	background-color: #CE751D;
+	margin: 10px auto;
+	border-radius: 5px;
+	color: black;
+}
+
+	h1 {
+	font-weight: normal;
+	font-size: 35px;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	}
+
+	.top-content {
+	background-color: #AAAA;
+	width: 90%;
+	margin: 0 auto 20px auto;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px lightgray;
+	}
+
+	h3 {
+	height: 100%;
+	background-color: #AAAA;
+	line-height: 60px;
+	padding: 0 50px;
+	color: white;
+	}
+
+	label {
+	display: inline-block;
+	height: 100%;
+	margin: 0 20px;
+	line-height: 60px;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	transition: color .5s;
+	}
+
+	label:hover {
+		color: black;
+	}
+
+	.photo-gallery {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	}
+
+	.pic {
+	position: relative;
+	height: 230px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #AAAA;
+	cursor: pointer;
+	transition: .5s;
+	}
+
+	.pic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: .5s;
+	}
+	
+	#check1:checked ~ .container .photo-gallery .pic {
+	opacity: 1;
+	transform: scale(1);
+	position: relative;
+	transition: .5s;
+	}
+
+	#check2:checked ~ .container .photo-gallery .hogwarts {
+	transform: scale(1);
+	opacity: 1;
+	position: relative;
+	}
+
+	#check2:checked ~ .container .photo-gallery .activities{
+	opacity: 0;
+	transform: scale(0);
+	position: absolute;
+	transition: .0s;
+	}
+
+	#check3:checked ~ .container .photo-gallery .activities {
+	transform: scale(1);
+	opacity: 1;
+	position: relative;
+	}
+
+	#check3:checked ~ .container .photo-gallery .hogwarts{
+	opacity: 0;
+	transform: scale(0);
+	position: absolute;
+	transition: .0s;
+	}
+
+	a {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 6px 15px; 
+	background-color: #CE751D;
+	margin: 50px;
+	}
+
+	a:hover,
+	a.active {
+	background: grey;
+	color: white;
+	}
+</style>
+</body>
+</html>

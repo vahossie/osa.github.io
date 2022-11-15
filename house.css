@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Laila', sans-serif ;
+}
+
+a {
+	display: inline-block;
+	font-weight: 400;
+	margin-left: 5px;
+	text-decoration:none;
+	padding: 6px 15px;
+	font-size: 15px;
+	color: grey;
+}
+a:link {color: black;}
+
+a:hover {color: darkgrey;}
+
+a:active {color: white;}
+.sidebar {
+	height: 100%;
+	background-color:#fff;
+	position: -webkit-sticky;
+	position:fixed;
+	overflow:scroll;
+	padding: 1%;
+	float: none;
+}
+
+.bar-block{
+	width:70%;
+	display:block;
+	padding:8px 16px;
+	text-align:left;
+	border:none;
+	white-space:normal;
+	float:none;
+	outline:0
+}
+
+.bar-color{
+	color: black;
+	background-color: lightgrey;
+}
+
+.houses {
+	margin-left: 205px;
+}
+
+.line {
+	width: 10em;
+	height: 4px;
+	background-color: #CE751D;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.efek-ngetik {
+	color: #CE751D;
+}
+.houses span {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    font-size: 28px;
+}
+
+.houses img {
+	max-width: 30%;
+	float: left;
+	margin-top: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.desc {
+	padding: 25px;
+	font-size: 16px;
+	text-align: justify;
+}
+blockquote {
+	padding: 10px;
+	font-size: 17px;
+	text-align: justify;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	border-left: 2px dashed #7F0909;
+}
+
+blockquote p:first-letter {
+	float: left;
+	padding-left: 5px;
+	margin: 3px 1px 2px 3px;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: georgia;
+	background-color: #946B2D;
+}
+.gryffindor {
+	padding: 30px;
+	text-align: justify;
+	background: ;
+	font-size: 17px;
+	margin-left: 370px;
+	background: whitesmoke;
+	border-bottom: 1px solid #7F0909;
+}
+.hufflepuff {
+	padding: 30px;
+	text-align: justify;
+	background: ;
+	font-size: 17px;
+	margin-left: 370px;
+	background: whitesmoke;
+	border-bottom: 1px solid #ECB939;
+}
+.ravenclaw {
+	padding: 30px;
+	text-align: justify;
+	background: ;
+	font-size: 17px;
+	margin-left: 370px;
+	background: whitesmoke;
+	border-bottom: 1px solid #222F5B;
+}
+.slytherin {
+	padding: 30px;
+	text-align: justify;
+	background: ;
+	font-size: 17px;
+	margin-left: 370px;
+	background: whitesmoke;
+	border-bottom: 1px solid #2A623D;
+}
+section a {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 6px 15px; 
+	background-color: #CE751D;
+	margin: 50px;
+}
+
+section a:hover, a.active {
+	background: grey;
+	color: white;
+}

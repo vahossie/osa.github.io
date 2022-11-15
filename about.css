@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+	
+
+	body{
+    padding: 1rem;
+    background-color: white;
+    font-family: 'Laila',sans-serif;
+    }
+
+    h1 {
+    	text-align: center;
+    	margin-top: 20px;
+    	color: #CE751D;
+    }
+    
+    .read-more-container{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1rem;
+    }
+
+    .container{
+    padding: 2rem;
+    background-color: lightgrey;
+    border-radius: 2px;
+    line-height: 1.4rem;
+    box-shadow: 0 0 1rem grey;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+    .read-more-btn{
+    color: #CE751D;
+    cursor: pointer;
+    }
+
+    .read-more-text{
+    display: none;
+    }
+
+    .read-more-text--show{
+    display: inline;
+    }
+    
+	section a {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 6px 15px; 
+	background-color: #CE751D;
+	margin: 50px;
+	}
+
+	section a:hover, a.active {
+	background: grey;
+	color: white;
+    }
+
