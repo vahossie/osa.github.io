@@ -8,7 +8,7 @@
    margin: 0 auto;
    width: 800px;
    max-width: 100%;
-   text-align: center;
+   text-align: center ;
 }
 #slider input[type=radio] {
    display: none;
